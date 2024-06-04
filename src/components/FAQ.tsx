@@ -13,33 +13,33 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "What this bot for?",
+    answer: "This bot keeps your Roleplay community safe and organized.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "How to invite the bot?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "You can invite the bot by clicking on the 'Get Started' bellow. You will be redirected to the Discord website where you can select the server you want to invite the bot to",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+      "Why i'm blacklisted ? How can i get unblacklisted ?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "You are blacklisted because you have violated the rules of Fivem servers by using cheats or hacks. You can get unblacklisted by contacting the support in our discord server.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "How can i get support ?",
+    answer: "You can get support by joining our discord server and creating a ticket in the support channel.",
     value: "item-4",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+      "How can i contribute to the project ?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "You can contribute to the project by contacting us in our discord server and telling us how you can help us. We are always looking for new developers, designers and support agents.",
     value: "item-5",
   },
 ];
@@ -80,7 +80,7 @@ export const FAQ = () => {
         Still have questions?{" "}
         <a
           rel="noreferrer noopener"
-          href="#"
+          href="https://discord.gg/ezRht2HbN3"
           className="text-primary transition-all border-primary hover:border-b-2"
         >
           Contact us

@@ -41,7 +41,7 @@ export const Footer = () => {
             </a>
           </div>
 
-          <div>
+          {/* <div>
             <a
               rel="noreferrer noopener"
               href="#"
@@ -49,7 +49,7 @@ export const Footer = () => {
             >
               Dribbble
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-col gap-2">
@@ -120,7 +120,7 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Community</h3>
-          <div>
+          {/* <div>
             <a
               rel="noreferrer noopener"
               href="#"
@@ -128,40 +128,40 @@ export const Footer = () => {
             >
               Youtube
             </a>
-          </div>
+          </div> */}
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://discord.gg/ezRht2HbN3"
               className="opacity-60 hover:opacity-100"
             >
               Discord
             </a>
           </div>
 
-          <div>
-            <a
+          {/* <div>
+             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
               Twitch
-            </a>
-          </div>
+            </a> 
+          </div> */}
         </div>
       </section>
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2024 5 Eye made by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="https://github.com/RadouaneGaroiaz"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Dudu49
           </a>
         </h3>
       </section>
