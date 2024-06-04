@@ -105,10 +105,14 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
+
+          <Popover>
+            <PopoverTrigger asChild>
+                  
                    <a
-                    rel="noreferrer noopener"
-                    href=""
-                    target="_blank"
+                    // rel="noreferrer noopener"
+                    // href=""
+                    // target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
@@ -116,6 +120,9 @@ export const Navbar = () => {
                     <DashboardIcon className="mr-2 w-5 h-5" />
                     Dashboard
                   </a>
+                  </PopoverTrigger>
+      <PopoverContent>SOON 🔜</PopoverContent>
+      </Popover>
                 </nav>
               </SheetContent>
             </Sheet>
