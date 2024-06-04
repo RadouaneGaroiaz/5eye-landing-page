@@ -15,23 +15,23 @@ const sponsors: SponsorProps[] = [
   {
     icon: <img src={discordSvg} alt="discord Logo"  />,
     name: "No Life RP",
-    link:"https://discord.gg/noliferp"
+    link:"https://discord.gg/vHH7q4JAqb"
     
   },
   {
     icon: <img src={discordSvg} alt="discord Logo"  />,
     name: "QLF RP",
-    link:"https://discord.gg/qlfrp"
+    link:"https://discord.gg/qlfroleplay"
   },
   {
     icon: <img src={discordSvg} alt="discord Logo"  />,
-    name: "CAZAFONIA ROLEPLAY", 
-    link:"https://discord.gg/cazafonia"
+    name: "Casanova Roleplay", 
+    link:"https://discord.gg/gcjt3dMZf6"
   },
   {
     icon: <img src={discordSvg} alt="discord Logo"  />,
     name: "ISOPHOBIA",
-    link:"https://discord.gg/isophobia"
+    link:"https://discord.gg/isophobia-v3-700481896055832708"
   },
   {
     icon: <img src={discordSvg} alt="discord Logo"  />,
