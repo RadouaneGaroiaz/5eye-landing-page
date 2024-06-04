@@ -22,7 +22,7 @@ export const HeroCards = () => {
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://github.com/shadcn.png"
+              src="https://cdn.discordapp.com/avatars/607640335841230859/cae13fa38b831188ef0c08e8c8c19b21?size=1024"
             />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
@@ -40,11 +40,11 @@ export const HeroCards = () => {
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
+            src="https://cdn.discordapp.com/avatars/523960082883543087/e8a7e4834a5627ff4c53e392b9cf02ce?size=1024"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Radouane Garoiaz</CardTitle>
+          <CardTitle className="text-center">Dudu49</CardTitle>
           <CardDescription className="font-normal text-primary">
             Bot Developer
           </CardDescription>
