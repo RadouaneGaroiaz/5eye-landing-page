@@ -139,6 +139,15 @@ export const Footer = () => {
               Discord
             </a>
           </div>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="https://buymeacoffee.com/dududev49"
+              className="opacity-60 hover:opacity-100"
+            >
+              Buy me a coffee
+            </a>
+          </div>
 
           {/* <div>
              <a
