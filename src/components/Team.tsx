@@ -23,9 +23,25 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "https://cdn.discordapp.com/avatars/523960082883543087/e8a7e4834a5627ff4c53e392b9cf02ce?size=1024",
+    name: "Dudu49",
+    position: "Bot & fullstack developer",
+    socialNetworks: [
+      { name: "Linkedin", url: "https://www.linkedin.com/in/radouane-garoiaz-48a025175/" },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/dudu__49",
+      },
+    ],
+  },
+  {
+    imageUrl: "https://cdn.discordapp.com/avatars/668839614718672896/c7ac56c8219ed6cf40dccbe2520da5a5?size=1024",
+    name: "! AK-DRAGON",
+    position: "Dev & Support",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -39,25 +55,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
-    socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: "https://cdn.discordapp.com/avatars/1095850165035872266/b4ea13ed2e1964855f181693bbb4d091?size=1024",
+    name: "Hobloch",
+    position: "Dev & Support",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
 
@@ -68,14 +68,18 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    imageUrl: "https://cdn.discordapp.com/avatars/885683908878942239/9a76c09908e83c5e051c681ad602caf8?size=1024",
+    name: "! HABIB メ",
+    position: "Support",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
         name: "Facebook",
         url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
       },
     ],
   },
@@ -108,8 +112,7 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+      Big thanks to our team and all who contributed to this project for their hard work and dedication. 😊
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">

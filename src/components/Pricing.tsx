@@ -27,49 +27,45 @@ interface PricingProps {
 const pricingList: PricingProps[] = [
   {
     title: "Free",
-    popular: 0,
-    price: 0,
+    popular: 1,
+    price: 20,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Streamline your Discord community with all futures for seamless operation.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Access to all premium features", "Unlimited servers", "Support services"
     ],
   },
-  {
-    title: "Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-  {
-    title: "Enterprise",
-    popular: 0,
-    price: 40,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
-    benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
+  // {
+  //   title: "Premium",
+  //   popular: 1,
+  //   price: 5,
+  //   description:
+  //     "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+  //   buttonText: "Start Free Trial",
+  //   benefitList: [
+  //     "4 Team member",
+  //     "4 GB Storage",
+  //     "Upto 6 pages",
+  //     "Priority support",
+  //     "lorem ipsum dolor",
+  //   ],
+  // },
+  // {
+  //   title: "Enterprise",
+  //   popular: 0,
+  //   price: 40,
+  //   description:
+  //     "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+  //   buttonText: "Contact US",
+  //   benefitList: [
+  //     "10 Team member",
+  //     "8 GB Storage",
+  //     "Upto 10 pages",
+  //     "Priority support",
+  //     "lorem ipsum dolor",
+  //   ],
+  // },
 ];
 
 export const Pricing = () => {
@@ -90,7 +86,8 @@ export const Pricing = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
         reiciendis.
       </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
+      <div className="grid place-content-center">
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
@@ -113,7 +110,7 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
+                <span className="text-3xl font-bold"><s>${pricing.price}</s></span>
                 <span className="text-muted-foreground"> /month</span>
               </div>
 
@@ -121,7 +118,11 @@ export const Pricing = () => {
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              <Button className="w-full"><a
+              href="https://discord.com/oauth2/authorize?client_id=956901844192469012&permissions=120527571014&scope=bot"
+              target="_blank"
+              rel="noreferrer noopener"
+              >{pricing.buttonText}</a></Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

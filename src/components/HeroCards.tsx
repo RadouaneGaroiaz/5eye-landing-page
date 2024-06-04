@@ -131,7 +131,11 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Try now</Button>
+          <Button className="w-full"><a
+          href="https://discord.com/oauth2/authorize?client_id=956901844192469012&permissions=120527571014&scope=bot"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Try now</a></Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
