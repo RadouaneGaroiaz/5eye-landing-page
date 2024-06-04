@@ -34,7 +34,12 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Add to Discord</Button>
+          <Button className="w-full md:w-1/3"><a
+          href="https://discord.com/oauth2/authorize?client_id=956901844192469012&permissions=120527571014&scope=bot"
+          target="_blank"
+          rel="noreferrer noopener"
+          >
+          Invite bot</a></Button>
           <Popover>
           <PopoverTrigger asChild>
           <a

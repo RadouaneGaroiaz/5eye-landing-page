@@ -21,7 +21,7 @@ export const HeroCards = () => {
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage
-              alt=""
+              alt="user avatar"
               src="https://cdn.discordapp.com/avatars/607640335841230859/cae13fa38b831188ef0c08e8c8c19b21?size=1024"
             />
             <AvatarFallback>SH</AvatarFallback>
