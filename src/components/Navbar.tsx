@@ -43,11 +43,11 @@ const routeList: RouteProps[] = [
     label: "FAQ",
   },
   {
-    href: "https://5eye-api.vercel.app/",
+    href: "https://api.5eye.xyz/",
     label: "API",
   },
   {
-    href: "https://5eyestatus.betteruptime.com/",
+    href: "https://status.5eye.xyz/",
     label: "Status",
   },
 ];
