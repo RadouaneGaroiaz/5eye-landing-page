@@ -14,6 +14,7 @@ interface TeamProps {
   name: string;
   position: string;
   socialNetworks: SociaNetworkslProps[];
+  description?: string;
 }
 
 interface SociaNetworkslProps {
@@ -26,6 +27,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://cdn.discordapp.com/avatars/523960082883543087/e8a7e4834a5627ff4c53e392b9cf02ce?size=1024",
     name: "Dudu49",
     position: "Bot & fullstack developer",
+    description: "I really enjoy transforming ideas into functional software that exceeds expectations",
     socialNetworks: [
       { name: "Linkedin", url: "https://www.linkedin.com/in/radouane-garoiaz-48a025175/" },
       {
@@ -42,6 +44,7 @@ const teamList: TeamProps[] = [
     imageUrl: "https://cdn.discordapp.com/avatars/668839614718672896/c7ac56c8219ed6cf40dccbe2520da5a5?size=1024",
     name: "! AK-DRAGON",
     position: "Dev & Support",
+    description: "I'm a fullstack developer and I love to help people",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -58,9 +61,13 @@ const teamList: TeamProps[] = [
     imageUrl: "https://cdn.discordapp.com/avatars/1095850165035872266/b4ea13ed2e1964855f181693bbb4d091?size=1024",
     name: "Hobloch",
     position: "Dev & Support",
+    description: "I'm a fullstack developer and I love to manage the community",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
-
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -71,6 +78,24 @@ const teamList: TeamProps[] = [
     imageUrl: "https://cdn.discordapp.com/avatars/885683908878942239/9a76c09908e83c5e051c681ad602caf8?size=1024",
     name: "! HABIB メ",
     position: "Support",
+    description: "i'm a student and i love to help people",
+    socialNetworks: [
+      { name: "Linkedin", url: "http://linkedin.com" },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: "https://cdn.discordapp.com/avatars/977954868474036264/a_6673c2ec324b646d9424eba5f2b19562?size=1024",
+    name: "nasserddine",
+    position: "Support",
+    description: "i love Roleplay and i love to contribute to inovate the community",
     socialNetworks: [
       { name: "Linkedin", url: "http://linkedin.com" },
       {
@@ -117,7 +142,7 @@ export const Team = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({ imageUrl, name, position, socialNetworks, description }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -135,7 +160,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{description}</p>
               </CardContent>
 
               <CardFooter>
