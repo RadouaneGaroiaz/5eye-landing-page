@@ -20,7 +20,7 @@ const FAQList: FAQProps[] = [
   {
     question: "How to invite the bot?",
     answer:
-      "You can invite the bot by clicking on the 'Get Started' bellow. You will be redirected to the Discord website where you can select the server you want to invite the bot to",
+      "You can invite the bot by clicking on the 'Get Started' above. You will be redirected to the Discord website where you can select the server you want to invite the bot to",
     value: "item-2",
   },
   {
