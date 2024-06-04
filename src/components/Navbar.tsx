@@ -12,12 +12,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { DashboardIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 //import { LogoIcon } from "./Icons";
 import logo from "@/assets/logo.png";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 interface RouteProps {
   href: string;
@@ -40,6 +41,10 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "FAQ",
+  },
+  {
+    href: "https://5eye-api.vercel.app/",
+    label: "API",
   },
   {
     href: "https://5eyestatus.betteruptime.com/",
@@ -100,7 +105,7 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  {/* <a
+                   <a
                     rel="noreferrer noopener"
                     href=""
                     target="_blank"
@@ -108,9 +113,9 @@ export const Navbar = () => {
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
-                  </a> */}
+                    <DashboardIcon className="mr-2 w-5 h-5" />
+                    Dashboard
+                  </a>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -132,17 +137,24 @@ export const Navbar = () => {
             ))}
           </nav>
 
+    
+
           <div className="hidden md:flex gap-2">
-            {/* <a
-              rel="noreferrer noopener"
-              href=""
-              target="_blank"
+          <Popover>
+          <PopoverTrigger asChild>
+          <a
+              // rel="noreferrer noopener"
+              // href=""
+              // target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a> */}
-
+              <DashboardIcon className="mr-2 w-5 h-5" />
+              Dashboard
+            </a>
+      </PopoverTrigger>
+      <PopoverContent>SOON 🔜</PopoverContent>
+      </Popover>
+           
             <ModeToggle />
           </div>
         </NavigationMenuList>
